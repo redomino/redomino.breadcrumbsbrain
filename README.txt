@@ -1,7 +1,7 @@
 redomino.breadcrumbsbrain
 =========================
 
-Useful set of browser view that let you add breadcrumbs to catalog brains.
+A useful set of browser views that let you add breadcrumbs to catalog brains.
 
 This is not a standalone package. If you want you can call the breadcrumbs_renderer
 view provided by this package (for example you can insert this code into the
