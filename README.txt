@@ -1,11 +1,11 @@
 redomino.breadcrumbsbrain
-=======================
+=========================
 
 Useful set of browser view that let you add breadcrumbs to catalog brains.
 
 This is not a standalone package. If you want you can call the breadcrumbs_renderer
 view provided by this package (for example you can insert this code into the
-search.pt template):
+search.pt template)::
 
     <tal:block tal:replace="structure result/@@breadcrumbs_renderer|nothing" />
 
@@ -27,22 +27,24 @@ Technical details
   Note well: if you want to use this browser view intensively you should
   STRONGLY consider to add a cache policy (it is not provided by default).
 
-  Data format returned:
-  [
-   {'Title': 'News'),
-    'absolute_url': 'http://localhost:8080/Plone/news'
-   },
-   {'Title': '2011'),
-    'absolute_url': 'http://localhost:8080/Plone/news/2011'
-   },
-  ]
+  Data format returned::
+
+      [
+       {'Title': 'News'),
+        'absolute_url': 'http://localhost:8080/Plone/news'
+       },
+       {'Title': '2011'),
+        'absolute_url': 'http://localhost:8080/Plone/news/2011'
+       },
+      ]
 
 - @@breadcrumbs_renderer
   This is a browser view that let you show the breadcrumbs info
   of a particular brain.
 
-  Data format displayed:
-  News -> 2011
+  Data format displayed::
+
+      News -> 2011
 
 Authors
 -------
