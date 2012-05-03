@@ -1,10 +1,20 @@
 <span class="breadcrumbs_brains"
     tal:define="
                 breadcrumbs_view context/@@breadcrumbs_view|nothing;
+                navigation_root_url context/@@plone_portal_state/navigation_root_url;
                 breadcrumbs breadcrumbs_view/breadcrumbs;
                ">
     <span class="breadcrumbs_where">Dove:</span>
     <span class="breadcrumbs_info">
+
+        <span id="breadcrumbs-home">
+            <a i18n:translate="tabs_home"
+               i18n:domain="plone"
+               tal:attributes="href navigation_root_url">Home</a>
+            <span tal:condition="python:breadcrumbs and breadcrumbs[:-1]" class="breadcrumbSeparator">
+                <span class="breadcrumbSeparator">&rarr;</span>
+            </span>
+        </span>
         <tal:block tal:repeat="el python: breadcrumbs[:-1]">
             <tal:block tal:define="is_last repeat/el/end">
                 <a tal:attributes="href el/absolute_url" tal:content="el/Title"></a>

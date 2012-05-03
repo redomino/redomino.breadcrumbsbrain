@@ -4,10 +4,15 @@ Changelog
 0.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Added .gitignore file
+  [davidemoro]
+
+- Modified breadcrumbs brain format (added "Home ->")
+  [davidemoro]
 
 
 0.1 (2012-04-02)
 ----------------
 
 - Initial release
+  [davidemoro]
