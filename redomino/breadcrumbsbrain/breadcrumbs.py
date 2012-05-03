@@ -26,16 +26,12 @@ from Products.CMFPlone.browser.navigation import get_view_url
 from Products.CMFPlone.browser.navigation import utils
 
 class BrainBreadcrumbs(BrowserView):
-    """ Definiamo una vista per ottenere le breadcrumbs a partire da un brain,
-        quindi evitiamo le getObject.
-        Come risultato viene ritornata una lista di dizionari che rappresentano
-        le briciole di pane da usare nella vista dei risultati.
+    """ This view let you get a breadcrumbs starting from a brain, no getObject
+        is needed.
+        As result it returns a list of dictionaries,
 
-        L'overhead e'proporzionale al batch size (numero di elementi per ogni paginata
-        di elementi). Dimezzando la finestra del batch size di dimezza l'overhead che
-        introduciamo con questo meccanismo.
-
-        Da monitorare e se necessario applicare delle politiche di cache.
+        The overhead is proportional to the batch site (number of elements for each page).
+        You can reduce the batch size if needed or implement some memoized policy.
     """
     implements(INavigationBreadcrumbs)
 
