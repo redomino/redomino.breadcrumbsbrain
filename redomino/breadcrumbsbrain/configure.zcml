@@ -5,9 +5,7 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="redomino.breadcrumbsbrain">
 
-  <five:registerPackage package="." initialize=".initialize" />
-
-  <!-- -*- extra stuff goes here -*- -->
+  <i18n:registerTranslations directory="locales" />
 
   <!-- Marker interface for brains applied by default -->
   <class class="Products.ZCatalog.CatalogBrains.AbstractCatalogBrain">
@@ -29,6 +27,5 @@
         class=".breadcrumbs.BrainBreadcrumbsRenderer"
         permission="zope2.View"
     />
-
   
 </configure>

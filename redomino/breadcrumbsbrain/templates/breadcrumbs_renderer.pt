@@ -1,10 +1,13 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="redomino.breadcrumbsbrain"
+      tal:omit-tag="">
 <span class="breadcrumbs_brains"
-    tal:define="
-                breadcrumbs_view context/@@breadcrumbs_view|nothing;
+    tal:define="breadcrumbs_view context/@@breadcrumbs_view|nothing;
                 navigation_root_url context/@@plone_portal_state/navigation_root_url;
-                breadcrumbs breadcrumbs_view/breadcrumbs;
-               ">
-    <span class="breadcrumbs_where">Dove:</span>
+                breadcrumbs breadcrumbs_view/breadcrumbs;">
+    <span class="breadcrumbs_where" i18n:translate="">Where:</span>
     <span class="breadcrumbs_info">
 
         <span id="breadcrumbs-home">
@@ -23,3 +26,4 @@
         </tal:block>
     </span>
 </span>
+</html>
