@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.3 (unreleased)
+0.3 (2012-06-01)
 ----------------
 
-- Nothing changed yet.
+- Added i18n
+  [giacomos]
 
 
 0.2 (2012-05-03)
