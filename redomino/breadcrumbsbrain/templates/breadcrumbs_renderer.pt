@@ -10,7 +10,7 @@
     <span class="breadcrumbs_where" i18n:translate="">Where:</span>
     <span class="breadcrumbs_info">
 
-        <span id="breadcrumbs-home">
+        <span class="breadcrumbs-home">
             <a i18n:translate="tabs_home"
                i18n:domain="plone"
                tal:attributes="href navigation_root_url">Home</a>
